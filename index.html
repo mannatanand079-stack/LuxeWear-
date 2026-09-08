@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeWear - Fashion Store</title>
+  <link rel="stylesheet" href="Style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+    <img src="logo.png" alt="LuxeWear Logo">
+            </div>
+  
+
+    <div class="brand-name">
+        ✦ LuxeWear ✦
+    </div>
+
+    <div class="brand-design">
+        ─── ✧ ───
+    </div>
+          </>
+
+            <ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#collection">Collection</a></li>
+<li><a href="#women">Women</a></li>
+<li><a href="#men">Men</a></li>
+<li><a href="#kids">Kids</a></li>
+<li><a href="#new-arrivals">New Arrivals</a></li>
+<li><a href="#offers">Offers</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#cart">🛒 Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to LuxeWear</h1>
+
+            <p>Your Style, Your Confidence</p>
+
+            <a href="#collection" class="btn">
+                Shop Collection
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Collection Section -->
+  <section id="collection" class="collection">
+    
+        <h2>Latest Collection</h2>
+      <h2> women's collection 👗 </h2>
+
+        <p>
+            Discover beautiful and trendy fashion styles
+            designed for you.
+        </p>
+
+        
+
+            <div class="product-card">
+                <img src="Images/dress.jpg" class="product-image" alt="Elegant Dress">
+                <h3>Elegant Dress</h3>
+                <p>₹1,499</p>
+                <button onclick="shopNow('Elegant Dress', 1499)">Shop Now</button>
+            </div>
+
+            <div class="product-card">
+              <img src="Images/top.jpg" class="product-image" alt="Classic Top">
+                <h3>Classic Top</h3>
+                <p>₹799</p>
+                <button onclick="shopNow('Classic Top', 799)">Shop Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="Images/jeans.jpg" class="product-image" alt="Stylish Jeans">
+                <h3>Stylish Jeans</h3>
+                <p>₹1,299</p>
+                <button onclick="shopNow('Stylish Jeans', 1299)">Shop Now</button>
+            </div>
+      </div>  <!-- पहले 3 products का products -->
+
+<div class="products">
+
+    <div class="product-card">
+        <div class="product-image">
+            <img src="Images/Floralkurti.jpg" alt="Floral Kurti">
+        </div>
+        <h3>Floral Kurti</h3>
+        <p>₹999</p>
+        <button onclick="shopNow('Floral Kurti', 999)">Shop Now</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image">
+            <img src="Images/partydress.jpg" alt="Party Dress">
+        </div>
+        <h3>Party Dress</h3>
+        <p>₹1,099</p>
+        <button onclick="shopNow('Party Dress', 1099)">Shop Now</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image">
+            <img src="Images/women-dress.jpg" alt="Women Dress">
+        </div>
+        <h3>Elegant Women Dress</h3>
+        <p>₹1,399</p>
+        <button onclick="shopNow('Elegant Women Dress', 1399)">Shop Now</button>
+    </div>
+
+</div>
+  </section>
+  <!-- Men's Collection -->
+<section id="men" class="category-section">
+
+    <h2>Men's Collection 👕</h2>
+    <p>Discover stylish and comfortable fashion for men.</p>
+
+    <div class="products">
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Images/shirt.jpg" alt="Men's Shirt">
+            </div>
+            <h3>Stylish Men's Shirt</h3>
+            <p>₹699</p>
+            <button onclick="shopNow('Stylish Mens Shirt', 699)">Shop Now</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Images/t-shirt.jpg" alt="Men's T-Shirt">
+            </div>
+            <h3>Stylish Men's T-Shirt</h3>
+            <p>₹699</p>
+            <button onclick="shopNow('Stylish Mens T-Shirt', 699)">Shop Now</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Images/Jean's.jpg" alt="Men's Jeans">
+            </div>
+            <h3>Comfortable Men's Jeans</h3>
+            <p>₹1,299</p>
+            <button onclick="shopNow('Comfortable Mens Jeans', 1299)">Shop Now</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Images/formalshirt.jpg" alt="Formal Shirt">
+            </div>
+            <h3>Formal Shirt</h3>
+            <p>₹1,199</p>
+            <button onclick="shopNow('Formal Shirt', 1199)">Shop Now</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Images/formalpant.jpg" alt="Formal Pants">
+            </div>
+            <h3>Formal Pants</h3>
+            <p>₹1,299</p>
+            <button onclick="shopNow('Formal Pants', 1299)">Shop Now</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Images/men-shirt.jpg" alt="Premium Casual Shirt">
+            </div>
+            <h3>Premium Casual Shirt</h3>
+            <p>₹999</p>
+            <button onclick="shopNow('Premium Casual Shirt', 999)">Shop Now</button>
+        </div>
+
+    </div>
+</section>
+    <!-- Kids Collection -->
+<section id="kids" class="category-section">
+
+    <h2>🧸 Kids Collection</h2>
+    <p>Discover cute, comfortable and stylish fashion for kids.</p>
+
+    <div class="products">
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Images/kidsdress.jpg" alt="Kids Dress">
+            </div>
+            <h3>Cute Kids Dress</h3>
+            <p>₹899</p>
+            <button onclick="shopNow('Cute Kids Dress', 899)">Shop Now</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Images/kidstshirt.png" alt="Kids T-Shirt">
+            </div>
+            <h3>Kids T-Shirt</h3>
+            <p>₹599</p>
+            <button onclick="shopNow('Kids T-Shirt', 599)">Shop Now</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Images/kidsjean.jpg" alt="Kids Jeans">
+            </div>
+            <h3>Kids Stylish Jeans</h3>
+            <p>₹799</p>
+            <button onclick="shopNow('Kids Stylish Jeans', 799)">Shop Now</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Images/kidsjumpsuit.jpg" alt="Kids Jumpsuit">
+            </div>
+            <h3>Kids Jumpsuit</h3>
+            <p>₹899</p>
+            <button onclick="shopNow('Kids Jumpsuit', 899)">Shop Now</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Images/girlsfrock.jpg" alt="Girls Frock">
+            </div>
+            <h3>Girls Frock</h3>
+            <p>₹999</p>
+            <button onclick="shopNow('Girls Frock', 999)">Shop Now</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Images/kids-outfit.jpg" alt="Kids Outfit">
+            </div>
+            <h3>Smart Kids Outfit</h3>
+            <p>₹899</p>
+            <button onclick="shopNow('Smart Kids Outfit', 899)">Shop Now</button>
+        </div>
+
+    </div>
+</section>
+  <!-- New Arrivals -->
+<section id="new-arrivals" class="category-section">
+
+    <h2>✨ New Arrivals</h2>
+    <p>Check out our newest fashion styles.</p>
+
+    <div class="products">
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Images/newdress.jpg" alt="New Dress">
+            </div>
+            <h3>New Trendy Dress</h3>
+            <p>₹1,599</p>
+            <button onclick="shopNow('New Trendy Dress', 1599)">Shop Now</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Images/newshirt.jpg" alt="New Shirt">
+            </div>
+            <h3>New Fashion Shirt</h3>
+            <p>₹1,099</p>
+            <button onclick="shopNow('New Fashion Shirt', 1099)">Shop Now</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Images/newjean.jpg" alt="New Jeans">
+            </div>
+            <h3>New Stylish Jeans</h3>
+            <p>₹1,399</p>
+            <button onclick="shopNow('New Stylish Jeans', 1399)">Shop Now</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Images/newkurti.jpg" alt="Trendy Kurti">
+            </div>
+            <h3>Trendy Kurti</h3>
+            <p>₹999</p>
+            <button onclick="shopNow('Trendy Kurti', 999)">Shop Now</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Images/indowestern.jpg" alt="Indo Western">
+            </div>
+            <h3>Indo Western</h3>
+            <p>₹1,199</p>
+            <button onclick="shopNow('Indo Western', 1199)">Shop Now</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Images/trendy-kurti.jpg" alt="Stylish Kurti">
+            </div>
+            <h3>Stylish Kurti</h3>
+            <p>₹1,199</p>
+            <button onclick="shopNow('Stylish Kurti', 1199)">Shop Now</button>
+        </div>
+
+    </div>
+</section>
+<!-- Offers Section -->
+<section id="offers" class="offers-section">
+
+    <h2>🏷️ Special Offers</h2>
+
+    <p>Grab the best fashion deals from LuxeWear!</p>
+
+    <div class="offers-container">
+
+        <div class="offer-box">
+            <h3>20% OFF</h3>
+            <p>On Women's Collection</p>
+            <button onclick="showOffer('20% OFF on Women Collection')">
+                Shop Offer
+            </button>
+        </div>
+
+        <div class="offer-box">
+            <h3>30% OFF</h3>
+            <p>On Men's Collection</p>
+            <button onclick="showOffer('30% OFF on Men Collection')">
+                Shop Offer
+            </button>
+        </div>
+
+        <div class="offer-box">
+            <h3>Special Sale 🎉</h3>
+            <p>Limited Time Fashion Deals</p>
+            <button onclick="showOffer('Special Sale')">
+                Shop Offer
+            </button>
+        </div>
+
+    </div>
+
+</section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About LuxeWear</h2>
+
+        <p>
+            LuxeWear is a fashion brand focused on modern,
+            elegant and comfortable clothing.
+        </p>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+      <div class="contact-info">
+    <h3>Get in Touch with LuxeWear</h3>
+    <p>📧 Email: luxewear@example.com</p>
+    <p>📞 Phone: +91 98765 43210</p>
+    <p>📍 Location: India</p>
+    </section>
+      </div>
+      <br>
+      <br>
+      
+    <!-- Help Box -->
+<section class="help-section">
+
+    <div class="help-box">
+
+        <h2>Need Help? 💬</h2>
+
+        <p>We are here to help you!</p>
+
+        <input type="text" id="helpName" placeholder="Enter your name">
+
+        <input type="email" id="helpEmail" placeholder="Enter your email">
+
+        <textarea id="helpMessage" placeholder="How can we help you?"></textarea>
+
+        <button onclick="submitHelp()">Submit</button>
+
+    </div>
+
+</section>
+    
+      <br>
+  <br>
+      
+    </section>
+  <!-- Cart Section -->
+<section id="cart" class="cart">
+    <h2>🛒 Shopping Cart</h2>
+    <div id="cartItems">
+        <p>Your cart is currently empty.</p>
+    </div>
+  <button onclick="goToPayment()">Proceed to Payment 💳</button>
+</section>
+  <section id="payment" class="payment-section">
+    <h2>💳 Payment</h2>
+    <p>Complete your order securely</p>
+
+    <div class="payment-box">
+        <input type="text" id="customerName" placeholder="Full Name">
+        <input type="email" id="customerEmail" placeholder="Email Address">
+        <input type="text" id="customerAddress" placeholder="Delivery Address">
+
+        <select id="paymentMethod">
+            <option value="">Select Payment Method</option>
+            <option value="UPI">UPI</option>
+            <option value="Card">Credit / Debit Card</option>
+            <option value="COD">Cash on Delivery</option>
+        </select>
+
+        <button onclick="makePayment()">Place Order</button>
+    </div>
+  </section>
+
+
+    <!-- Footer -->
+    <footer>
+        © 2026 LuxeWear. All Rights Reserved.
+    </footer>
+  <script src="Script.js"></script>
+</body>
+
+</body>
+</html>
