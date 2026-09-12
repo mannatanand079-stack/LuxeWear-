@@ -1,0 +1,1629 @@
+/* =====================================================
+   LUXEWEAR - COMPLETE RESPONSIVE CSS
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #fff;
+    line-height: 1.6;
+
+    /* Space for fixed navbar */
+    padding-top: 90px;
+
+    overflow-x: hidden;
+}
+
+
+/* =====================================================
+   NAVBAR - DESKTOP / LAPTOP
+   ===================================================== */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Logo */
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 75px;
+    height: 65px;
+
+    object-fit: contain;
+    display: block;
+}
+
+
+/* Brand Name */
+
+.brand-name {
+    font-size: 23px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+    white-space: nowrap;
+
+    flex-shrink: 0;
+}
+
+
+/* Decorative Design */
+
+.brand-design {
+    font-size: 16px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+
+/* Navigation */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    white-space: nowrap;
+}
+
+.nav-links li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #333;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #777;
+}
+
+
+/* =====================================================
+   HERO
+   ===================================================== */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background: #f5f0ed;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   GENERAL BUTTON
+   ===================================================== */
+
+.btn {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background: #333;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   HOME PREVIEW
+   ===================================================== */
+
+.home-preview {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.home-preview h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.home-preview > p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   OFFERS PREVIEW
+   ===================================================== */
+
+.offers-preview {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.offers-preview h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.offers-preview p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+/* Home Buttons */
+
+.home-preview .view-collection-btn,
+.offers-preview .view-offers-btn {
+
+    display: block;
+
+    width: 240px;
+    height: 55px;
+
+    margin: 25px auto;
+
+    padding: 10px 15px;
+
+    background: #333;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.home-preview .view-collection-btn:hover,
+.offers-preview .view-offers-btn:hover {
+    background: #555;
+}
+
+
+/* =====================================================
+   CATEGORY BUTTONS
+   WOMEN / MEN / KIDS / NEW ARRIVALS
+   ===================================================== */
+
+.collection-menu {
+
+    /* Important: stays available while scrolling */
+    position: sticky;
+
+    /* Below fixed navbar */
+    top: 90px;
+
+    z-index: 999;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    padding: 15px 20px;
+
+    margin: 0;
+
+    background: #fff;
+
+    border-bottom: 1px solid #eee;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+
+/* Category Buttons */
+
+.collection-menu button {
+
+    background: #f3e2f5;
+
+    color: #333;
+
+    border: none;
+
+    border-radius: 30px;
+
+    padding: 12px 25px;
+
+    min-width: 150px;
+
+    font-size: 17px;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.collection-menu button:hover {
+    transform: translateY(-2px);
+    background: #ead5ed;
+}
+
+
+/* =====================================================
+   COLLECTION
+   ===================================================== */
+
+.collection {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.collection h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.collection > p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   PRODUCTS
+   ===================================================== */
+
+.products {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 280px);
+
+    justify-content: center;
+
+    align-items: start;
+
+    gap: 25px;
+
+    padding: 30px 0;
+}
+
+
+/* Product Card */
+
+.product-card {
+
+    width: 280px;
+
+    padding: 20px;
+
+    background: #fff;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+
+    text-align: center;
+}
+
+
+/* Product Image */
+
+.product-image {
+
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    margin-bottom: 10px;
+}
+
+.product-image img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* Product Name */
+
+.product-card h3 {
+
+    font-size: 22px;
+
+    margin-bottom: 8px;
+}
+
+
+/* Product Price */
+
+.product-card p {
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+/* Product Button */
+
+.product-card button {
+
+    padding: 12px 28px;
+
+    font-size: 16px;
+
+    border: none;
+
+    background: #333;
+
+    color: white;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background: #555;
+}
+
+
+/* =====================================================
+   CATEGORY SECTIONS
+   ===================================================== */
+
+.category-section {
+
+    padding: 60px 20px;
+
+    text-align: center;
+}
+
+.category-section h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+.category-section > p {
+
+    font-size: 18px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   OFFERS SECTION
+   ===================================================== */
+
+.offers-section {
+
+    padding: 60px 20px;
+
+    text-align: center;
+}
+
+.offers-section h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+.offers-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+}
+
+.offer-box {
+
+    width: 250px;
+
+    padding: 30px 20px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+
+    text-align: center;
+}
+
+.offer-box h3 {
+
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+.offer-box button {
+
+    padding: 10px 20px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #333;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   ABOUT
+   ===================================================== */
+
+.about {
+
+    padding: 60px 8%;
+
+    text-align: center;
+
+    background: #f8f8f8;
+}
+
+.about h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+.about p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    font-size: 18px;
+}
+
+
+/* =====================================================
+   CONTACT
+   ===================================================== */
+
+.contact {
+
+    padding: 60px 8%;
+
+    text-align: center;
+}
+
+.contact h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+.contact p {
+
+    font-size: 18px;
+
+    margin: 5px 0;
+}
+
+
+/* =====================================================
+   HELP BOX
+   ===================================================== */
+
+.help-section {
+
+    width: 100%;
+
+    padding: 50px 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.help-box {
+
+    width: 90%;
+
+    max-width: 500px;
+
+    padding: 30px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.help-box h2 {
+
+    margin-bottom: 10px;
+}
+
+.help-box p {
+
+    margin-bottom: 20px;
+}
+
+.help-box input,
+.help-box textarea {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 8px 0;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+}
+
+.help-box textarea {
+
+    height: 120px;
+
+    resize: none;
+}
+
+.help-box button {
+
+    padding: 12px 30px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #333;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   CART
+   ===================================================== */
+
+.cart {
+
+    padding: 60px 20px;
+
+    text-align: center;
+}
+
+.cart h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+.cart button {
+
+    padding: 12px 25px;
+
+    margin-top: 20px;
+
+    background: #333;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   PAYMENT
+   ===================================================== */
+
+.payment-section {
+
+    padding: 60px 20px;
+
+    text-align: center;
+}
+
+.payment-section h2 {
+
+    margin-bottom: 10px;
+}
+
+.payment-box {
+
+    width: 90%;
+
+    max-width: 500px;
+
+    margin: 30px auto;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.payment-box input,
+.payment-box select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 10px 0;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+}
+
+.payment-box button {
+
+    padding: 12px 30px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #333;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+
+    padding: 20px;
+
+    text-align: center;
+
+    background: #222;
+
+    color: white;
+}
+
+    /* Logo - Row 1 */
+
+    .logo {
+
+        grid-column: 1;
+
+        grid-row: 1;
+
+        width: 50px;
+
+        height: 50px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+    }
+
+    .logo img {
+
+        width: 48px;
+
+        height: 48px;
+
+        object-fit: contain;
+    }
+
+
+    /* Brand - Row 1 */
+
+    .brand-name {
+
+        grid-column: 2;
+
+        grid-row: 1;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: flex-start;
+
+        font-size: 20px;
+
+        letter-spacing: 2px;
+
+        white-space: nowrap;
+    }
+
+
+    /* Hide decorative line */
+
+    .brand-design {
+
+        display: none;
+    }
+
+
+    /* ---------------------------------------------
+       NAV LINKS - ROW 2 & ROW 3
+       --------------------------------------------- */
+
+    .nav-links {
+
+        grid-column: 1 / 3;
+
+        grid-row: 2 / 4;
+
+        width: 100%;
+
+        height: 80px;
+
+        display: grid;
+
+        grid-template-columns: repeat(5, 1fr);
+
+        grid-template-rows: 40px 40px;
+
+        gap: 0;
+
+        margin: 0;
+
+        padding: 0;
+
+        list-style: none;
+
+        align-items: center;
+
+        justify-items: center;
+
+        overflow: hidden;
+    }
+
+
+    .nav-links li {
+
+        width: 100%;
+
+        height: 40px;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+    }
+
+
+    .nav-links a {
+
+        display: block;
+
+        font-size: 13px;
+
+        color: #333;
+
+        text-decoration: none;
+
+        white-space: nowrap;
+
+        text-align: center;
+    }
+
+
+    /*
+       Grid arrangement:
+
+       Row 1:
+       Home | Collection | Men | Kids | New Arrivals
+
+       Row 2:
+       Offers | About | Contact | Cart
+    */
+
+    .nav-links li:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .nav-links li:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .nav-links li:nth-child(3) {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .nav-links li:nth-child(4) {
+        grid-column: 4;
+        grid-row: 1;
+    }
+
+    .nav-links li:nth-child(5) {
+        grid-column: 5;
+        grid-row: 1;
+    }
+
+    .nav-links li:nth-child(6) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .nav-links li:nth-child(7) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .nav-links li:nth-child(8) {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .nav-links li:nth-child(9) {
+        grid-column: 4;
+        grid-row: 2;
+    }
+
+
+    /* ---------------------------------------------
+       CATEGORY MENU
+       --------------------------------------------- */
+
+    .collection-menu {
+
+        position: sticky;
+
+        top: 135px;
+
+        z-index: 900;
+
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+
+        padding: 12px 10px;
+
+        margin: 0;
+
+        background: white;
+
+        border-bottom: 1px solid #eee;
+
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+
+    .collection-menu button {
+
+        width: 100%;
+
+        min-width: 0;
+
+        padding: 12px 8px;
+
+        font-size: 16px;
+
+        border-radius: 25px;
+
+        white-space: nowrap;
+    }
+
+
+    /* ---------------------------------------------
+       HERO
+       --------------------------------------------- */
+
+    .hero {
+
+        min-height: 400px;
+
+        padding: 40px 15px;
+    }
+
+    .hero h1 {
+
+        font-size: 32px;
+    }
+
+    .hero p {
+
+        font-size: 17px;
+    }
+
+
+    /* ---------------------------------------------
+       HOME
+       --------------------------------------------- */
+
+    .home-preview {
+
+        padding: 40px 15px;
+    }
+
+    .home-preview h2 {
+
+        font-size: 28px;
+    }
+
+
+    /* ---------------------------------------------
+       PRODUCTS
+       --------------------------------------------- */
+
+    .products {
+
+        grid-template-columns: 1fr;
+
+        justify-items: center;
+
+        gap: 25px;
+
+        padding: 25px 0;
+    }
+
+    .product-card {
+
+        width: 90%;
+
+        max-width: 350px;
+    }
+
+    .product-image {
+
+        height: 300px;
+    }
+
+
+    /* ---------------------------------------------
+       COLLECTION
+       --------------------------------------------- */
+
+    .collection {
+
+        padding: 40px 15px;
+    }
+
+    .collection h2 {
+
+        font-size: 28px;
+    }
+
+
+    /* ---------------------------------------------
+       CATEGORY
+       --------------------------------------------- */
+
+    .category-section {
+
+        padding: 40px 15px;
+    }
+
+    .category-section h2 {
+
+        font-size: 28px;
+    }
+
+
+    /* ---------------------------------------------
+       OFFERS
+       --------------------------------------------- */
+
+    .offers-section {
+
+        padding: 40px 15px;
+    }
+
+    .offers-container {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .offer-box {
+
+        width: 90%;
+
+        max-width: 350px;
+    }
+
+
+    /* ---------------------------------------------
+       ABOUT
+       --------------------------------------------- */
+
+    .about {
+
+        padding: 40px 15px;
+    }
+
+    .about h2 {
+
+        font-size: 28px;
+    }
+
+
+    /* ---------------------------------------------
+       CONTACT
+       --------------------------------------------- */
+
+    .contact {
+
+        padding: 40px 15px;
+    }
+
+    .contact h2 {
+
+        font-size: 28px;
+    }
+
+
+    /* ---------------------------------------------
+       HELP
+       --------------------------------------------- */
+
+    .help-section {
+
+        padding: 40px 15px;
+    }
+
+    .help-box {
+
+        width: 95%;
+
+        padding: 25px 18px;
+    }
+
+
+    /* ---------------------------------------------
+       PAYMENT
+       --------------------------------------------- */
+
+    .payment-section {
+
+        padding: 40px 15px;
+    }
+
+    .payment-box {
+
+        width: 95%;
+
+        padding: 25px 18px;
+    }
+
+
+    /* ---------------------------------------------
+       CART
+       --------------------------------------------- */
+
+    .cart {
+
+        padding: 40px 15px;
+    }
+
+}
+/* ===== TOP NAVBAR ===== */
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+}
+
+.logo img{
+    width: 55px;
+    height: 55px;
+}
+
+.brand-name{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* ===== CATEGORY BAR ===== */
+
+.collection-menu{
+    position: sticky;
+    top: 80px;
+    z-index: 999;
+    background: white;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+}
+
+.collection-menu button{
+    border: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+    background: #f3e5f5;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Space because navbar fixed */
+body{
+    padding-top: 140px;
+}
+
+/* ===== MOBILE ===== */
+
+@media screen and (max-width:600px){
+
+    .navbar{
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-links{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 8px;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .nav-links a{
+        font-size: 12px;
+    }
+
+    .collection-menu{
+        top: 120px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+
+    body{
+        padding-top: 220px;
+    }
+}
+/* =================================
+   LUXEWEAR SECTION CONTROL
+   ================================= */
+
+/* Hide shopping sections initially */
+#collection,
+#men,
+#kids,
+#new-arrivals,
+#offers,
+#about,
+#contact,
+#cart,
+#payment {
+    display: none;
+}
+
+/* Help box hidden initially */
+.help-section {
+    display: none;
+}
+
+/* Keep category buttons visible */
+.collection-menu {
+    position: sticky;
+    z-index: 999;
+}
+/* ===== COLLECTION HEADINGS FIX ===== */
+
+#collection h2,
+#new-arrivals h2,
+#men h2,
+#kids h2,
+#offers h2,
+#about h2,
+#contact h2,
+#cart h2,
+#payment h2 {
+    display: block !important;
+    visibility: visible !important;
+    color: #333 !important;
+    text-align: center;
+    margin: 20px 0 15px;
+    position: relative;
+    z-index: 5;
+}
+/* ===== SECTION HEADINGS FIX ===== */
+
+#men h2,
+#kids h2,
+#new-arrivals h2 {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: #333 !important;
+    text-align: center !important;
+    font-size: 28px !important;
+    margin: 25px 0 15px !important;
+    padding: 10px !important;
+}
+/* ===== CATEGORY MENU OVERLAP FIX ===== */
+
+.collection-menu {
+    position: relative !important;
+    top: auto !important;
+    z-index: 10 !important;
+    margin-bottom: 20px !important;
+}
+
+.category-section,
+.collection {
+    position: relative;
+    z-index: 1;
+    padding-top: 25px !important;
+}
+
+.category-section h2,
+.collection h2 {
+    position: relative;
+    z-index: 20;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+/* ===== WHY CHOOSE LUXEWEAR - RESPONSIVE ===== */
+
+.why-luxe {
+    width: 100%;
+    padding: 45px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.why-luxe h2 {
+    font-size: 30px;
+    margin: 0 0 30px;
+    color: #333;
+}
+
+.why-boxes {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+
+    /* Laptop/Desktop */
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.why-box {
+    width: 100%;
+    padding: 25px 15px;
+
+    background: #f8eafa;
+    border-radius: 18px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+}
+
+.why-box h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.why-box p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    color: #555;
+}
+
+
+/* ===== TABLET ===== */
+
+@media (max-width: 900px) {
+
+    .why-boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 600px) {
+
+    .why-luxe {
+        padding: 35px 15px;
+    }
+
+    .why-luxe h2 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    .why-boxes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .why-box {
+        padding: 20px 10px;
+    }
+
+    .why-box h3 {
+        font-size: 16px;
+    }
+
+    .why-box p {
+        font-size: 13px;
+    }
+
+}
+/* ===== LAPTOP NAVBAR - ONE LINE ===== */
+
+@media (min-width: 901px) {
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        list-style: none;
+        white-space: nowrap;
+    }
+
+    .nav-links li {
+        display: inline-block !important;
+        white-space: nowrap;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        white-space: nowrap;
+        font-size: 14px;
+    }
+}
+
+
+/* ===== MOBILE NAVBAR ===== */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+}
+/* ===== PRODUCT GRID FOR LAPTOP ===== */
+
+@media (min-width: 901px) {
+
+    .products {
+        width: 100%;
+        max-width: 1200px;
+        margin: 30px auto;
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 30px !important;
+        align-items: start;
+    }
+
+    .product-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .product-card img,
+    .product-image img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        display: block;
+    }
+}
+/* ===== COLLECTION MENU - LAPTOP ===== */
+
+@media (min-width: 901px) {
+
+    .collection-menu {
+        width: 100%;
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 20px !important;
+        padding: 15px 20px;
+    }
+
+    .collection-menu button {
+        display: inline-block !important;
+        width: auto !important;
+        min-width: 150px;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+}
+/* ===== LAPTOP NAVBAR SPACING ===== */
+
+@media (min-width: 901px) {
+
+    .navbar {
+        gap: 30px !important;
+    }
+
+    .nav-links {
+        margin-left: 15px !important;
+        gap: 14px !important;
+    }
+}
